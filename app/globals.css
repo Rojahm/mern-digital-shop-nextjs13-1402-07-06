@@ -32,16 +32,16 @@ body {
   margin: 0 auto;
 }
 .menu-btn {
-  @apply bg-lime-700 p-2 text-stone-100 rounded shadow hover:shadow-md;
+  @apply bg-lime-700 p-2 text-stone-100 rounded shadow-md hover:shadow-lg w-20 text-center border-2 border-lime-700 transition-all duration-200;
 }
 .Header .menu-btn {
   font-size: 13px;
   font-weight: 600;
 }
-.Header .menu-btn:hover {
+.menu-btn:hover {
   cursor: pointer;
+  @apply bg-stone-200 text-lime-700;
 }
 .search-form {
-  @apply bg-stone-200 rounded flex shadow;
-  height: 48px;
+  @apply bg-stone-200 rounded flex shadow h-12;
 }
