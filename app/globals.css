@@ -28,3 +28,20 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+.container {
+  margin: 0 auto;
+}
+.menu-btn {
+  @apply bg-lime-700 p-2 text-stone-100 rounded shadow hover:shadow-md;
+}
+.Header .menu-btn {
+  font-size: 13px;
+  font-weight: 600;
+}
+.Header .menu-btn:hover {
+  cursor: pointer;
+}
+.search-form {
+  @apply bg-stone-200 rounded flex shadow;
+  height: 48px;
+}
