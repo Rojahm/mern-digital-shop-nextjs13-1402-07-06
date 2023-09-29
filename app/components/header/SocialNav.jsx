@@ -1,28 +1,25 @@
+import Link from "next/link";
 //ui
 import { PiTelegramLogo, PiYoutubeLogo, PiInstagramLogo } from "react-icons/pi";
 
 function SocialNav({ onShow, onHide, showSocialMenu }) {
   return (
     <div
-      className={
-        showSocialMenu === true
-          ? " w-[7.5rem] z-20 absolute top-44 transition-all duration-300 ease-in-out"
-          : " w-[7.5rem] z-20 absolute top-36 transition-all duration-300 ease-in-out"
-      }
+      className={showSocialMenu === true ? "SocialNav active" : "SocialNav"}
       onMouseEnter={onShow}
       onMouseLeave={onHide}
     >
-      <ul className="flex justify-evenly gap-2">
-        <li>
+      <div className="flex justify-evenly gap-2">
+        <Link href={"/"}>
           <PiTelegramLogo size={"24px"} className="text-lime-800" />
-        </li>
-        <li>
+        </Link>
+        <Link href={"/"}>
           <PiYoutubeLogo size={"24px"} className="text-lime-800" />
-        </li>
-        <li>
+        </Link>
+        <Link href={"/"}>
           <PiInstagramLogo size={"24px"} className="text-lime-800" />
-        </li>
-      </ul>
+        </Link>
+      </div>
     </div>
   );
 }

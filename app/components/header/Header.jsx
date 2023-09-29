@@ -19,23 +19,27 @@ function Header() {
     console.log(showSocialMenu);
   };
   return (
-    <header className="mb-10">
-      <div className="Header flex justify-between mt-2 gap-2 z-40">
-        <Icon onShow={showSocial} onHide={hideSocial} />
-        <div className="flex flex-col justify-end items-start w-3/5">
+    <header className="mb-2">
+      <div className="flex justify-between items-center mt-2 gap-2">
+        <Icon
+          onShow={showSocial}
+          onHide={hideSocial}
+          showSocialMenu={showSocialMenu}
+        />
+        <div className="flex flex-col items-start w-3/5">
           <Nav />
           <Search />
         </div>
-        <div className="flex flex-col justify-end mx-3 ml-6">
+        <div className="flex flex-col ml-6">
           <Contact />
           <UserNav />
         </div>
       </div>
-      <SocialNav
+      {/* <SocialNav
         onShow={showSocial}
         onHide={hideSocial}
         showSocialMenu={showSocialMenu}
-      />
+      /> */}
     </header>
   );
 }
