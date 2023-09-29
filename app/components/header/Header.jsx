@@ -7,7 +7,7 @@ import UserNav from "./UserNav";
 
 function Header() {
   return (
-    <div className="Header flex justify-center mb-10 mt-2 gap-2">
+    <div className="Header flex justify-between mb-10 mt-2 gap-2">
       <Icon />
       <div className="flex flex-col justify-end items-start w-3/5">
         <Nav />

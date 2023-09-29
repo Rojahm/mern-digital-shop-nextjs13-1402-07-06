@@ -1,7 +1,10 @@
+import MainSlider from "./components/slider/MainSlider";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
+    <main className="flex flex-col items-center justify-between container">
       <h1>HomePage</h1>
+      <MainSlider />
     </main>
   );
 }
