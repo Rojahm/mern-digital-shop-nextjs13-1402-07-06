@@ -13,12 +13,13 @@ SwiperCore.use([Autoplay]);
 
 // import required modules
 import { Navigation, Pagination, Autoplay, Scrollbar } from "swiper/modules";
+import Image from "next/image";
 
 function MainSlider() {
   return (
     <>
       <Swiper
-        slidesPerView={4}
+        slidesPerView={1}
         spaceBetween={20}
         pagination={{
           clickable: true,
@@ -28,67 +29,43 @@ function MainSlider() {
         className="mySwiper"
         autoplay={{ delay: 3000 }}
         scrollbar={{ draggable: true }}
-        breakpoints={{
-          300: {
-            slidesPerView: 1,
-          },
-          600: {
-            slidesPerView: 2,
-          },
-          800: {
-            slidesPerView: 3,
-          },
-          1024: {
-            slidesPerView: 4,
-          },
-          1280: {
-            slidesPerView: 5,
-          },
-        }}
       >
-        <SwiperSlide className="rounded-md shadow">
-          <div className=" h-[20rem] bg-stone-200/30 flex justify-center items-center">
-            Slide 1
+        <SwiperSlide className="shadow">
+          <div className="bg-stone-200/30 flex justify-center items-center">
+            <Image
+              className="rounded-md"
+              alt="slide 1"
+              width={1320}
+              height={310}
+              src={"/images/slider/slide1.jpg"}
+              placeholder="data:image/webp;base64,UklGRiwEAABXRUJQVlA4WAoAAAAgAAAAhAEAXQAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZWUDggPgIAAHATAJ0BKoUBXgA+7W6xVDO3KiMj8OqK4B2JZ27gS4mEfKnf6ke7pN+QOgAakHKq04glChC7iBAc0S/JZ4B+EH0z7utrR9q86HeHPAFN0xzHqoPQABb4FCfEuBMuVr73FoSuaIXemFZlKa+/I9P/z1pyKpSlKVXWV2E9Wm8yzg6zik1hMv2YoUW8iAyN2pjZpfE2WVRfeFaR/EdOL63i6CiZ2YoAAP7jE0WBD+duznbn9//BrfUr50htD3m1OUPrAAlMN+HftrC1aQum44ONa+F9TjLIRV/BqiYULywmOnhSpachmKkQlt3ps1Bf9oGRbM79RxJi6QAP3V0yQcI7M+b6dcwsJR8ifNb8gc60bMdDu1KmS4PlVW6X5MW2fjhtz6wer7umitfqNH50RAjRZePbOFjC3rYtZzsfrnYcR8BDczL6VVxTcGZmO0QjFjeHUJXmkmaUichEyJ51ZCpHrqYoEa8Tu+dgfcEx+A8Ga4LBRFnClCZwHYLadrusUMrALSAiMeymcT4s0x2Lh5UpwjnhV+RW+N72PtBep7OKt1GjRQpWTTbUOMWIkYi24dqEi+nqnfHhCdwcoXANebhrD3hCY3jZSmCq+WetEABzoAEqVYms+bwYqtL6CldqkUQt/DyG0NhsSDumdTjuIB9cI+noMzEZcb8hZOmKHHNCm/kXB5GLw8+3XGDOopYRnUmtcBJIaQnmDCrFbZDFbSThrtynVWnrBCzSMoRpyU1A+v9zJm/25dOUFJnKlzk4ZAA="
+              objectFit="cover"
+              layout="fixed"
+            />
           </div>
         </SwiperSlide>
-        <SwiperSlide className="rounded-md shadow">
-          <div className=" h-[20rem] bg-stone-200/30 flex justify-center items-center">
-            Slide 2
+        <SwiperSlide className="shadow">
+          <div className="bg-stone-200/30 flex justify-center items-center">
+            <Image
+              className="rounded-md"
+              alt="slide 1"
+              width={1320}
+              height={310}
+              src={"/images/slider/slide2.jpg"}
+              placeholder="data:image/webp;base64,UklGRiwEAABXRUJQVlA4WAoAAAAgAAAAhAEAXQAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZWUDggPgIAAHATAJ0BKoUBXgA+7W6xVDO3KiMj8OqK4B2JZ27gS4mEfKnf6ke7pN+QOgAakHKq04glChC7iBAc0S/JZ4B+EH0z7utrR9q86HeHPAFN0xzHqoPQABb4FCfEuBMuVr73FoSuaIXemFZlKa+/I9P/z1pyKpSlKVXWV2E9Wm8yzg6zik1hMv2YoUW8iAyN2pjZpfE2WVRfeFaR/EdOL63i6CiZ2YoAAP7jE0WBD+duznbn9//BrfUr50htD3m1OUPrAAlMN+HftrC1aQum44ONa+F9TjLIRV/BqiYULywmOnhSpachmKkQlt3ps1Bf9oGRbM79RxJi6QAP3V0yQcI7M+b6dcwsJR8ifNb8gc60bMdDu1KmS4PlVW6X5MW2fjhtz6wer7umitfqNH50RAjRZePbOFjC3rYtZzsfrnYcR8BDczL6VVxTcGZmO0QjFjeHUJXmkmaUichEyJ51ZCpHrqYoEa8Tu+dgfcEx+A8Ga4LBRFnClCZwHYLadrusUMrALSAiMeymcT4s0x2Lh5UpwjnhV+RW+N72PtBep7OKt1GjRQpWTTbUOMWIkYi24dqEi+nqnfHhCdwcoXANebhrD3hCY3jZSmCq+WetEABzoAEqVYms+bwYqtL6CldqkUQt/DyG0NhsSDumdTjuIB9cI+noMzEZcb8hZOmKHHNCm/kXB5GLw8+3XGDOopYRnUmtcBJIaQnmDCrFbZDFbSThrtynVWnrBCzSMoRpyU1A+v9zJm/25dOUFJnKlzk4ZAA="
+            />
           </div>
         </SwiperSlide>
-        <SwiperSlide className="rounded-md shadow">
-          <div className=" h-[20rem] bg-stone-200/30 flex justify-center items-center">
-            Slide 3
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="rounded-md shadow">
-          <div className=" h-[20rem] bg-stone-200/30 flex justify-center items-center">
-            Slide 4
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="rounded-md shadow">
-          <div className=" h-[20rem] bg-stone-200/30 flex justify-center items-center">
-            Slide 5
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="rounded-md shadow">
-          <div className=" h-[20rem] bg-stone-200/30 flex justify-center items-center">
-            Slide 6
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="rounded-md shadow">
-          <div className=" h-[20rem] bg-stone-200/30 flex justify-center items-center">
-            Slide 7
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="rounded-md shadow">
-          <div className=" h-[20rem] bg-stone-200/30 flex justify-center items-center">
-            Slide 8
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="rounded-md shadow">
-          <div className=" h-[20rem] bg-stone-200/30 flex justify-center items-center">
-            Slide 9
+        <SwiperSlide className="shadow">
+          <div className="bg-stone-200/30 flex justify-center items-center">
+            <Image
+              className="rounded-md"
+              alt="slide 1"
+              width={1320}
+              height={310}
+              src={"/images/slider/slide3.jpg"}
+              placeholder="data:image/webp;base64,UklGRiwEAABXRUJQVlA4WAoAAAAgAAAAhAEAXQAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZWUDggPgIAAHATAJ0BKoUBXgA+7W6xVDO3KiMj8OqK4B2JZ27gS4mEfKnf6ke7pN+QOgAakHKq04glChC7iBAc0S/JZ4B+EH0z7utrR9q86HeHPAFN0xzHqoPQABb4FCfEuBMuVr73FoSuaIXemFZlKa+/I9P/z1pyKpSlKVXWV2E9Wm8yzg6zik1hMv2YoUW8iAyN2pjZpfE2WVRfeFaR/EdOL63i6CiZ2YoAAP7jE0WBD+duznbn9//BrfUr50htD3m1OUPrAAlMN+HftrC1aQum44ONa+F9TjLIRV/BqiYULywmOnhSpachmKkQlt3ps1Bf9oGRbM79RxJi6QAP3V0yQcI7M+b6dcwsJR8ifNb8gc60bMdDu1KmS4PlVW6X5MW2fjhtz6wer7umitfqNH50RAjRZePbOFjC3rYtZzsfrnYcR8BDczL6VVxTcGZmO0QjFjeHUJXmkmaUichEyJ51ZCpHrqYoEa8Tu+dgfcEx+A8Ga4LBRFnClCZwHYLadrusUMrALSAiMeymcT4s0x2Lh5UpwjnhV+RW+N72PtBep7OKt1GjRQpWTTbUOMWIkYi24dqEi+nqnfHhCdwcoXANebhrD3hCY3jZSmCq+WetEABzoAEqVYms+bwYqtL6CldqkUQt/DyG0NhsSDumdTjuIB9cI+noMzEZcb8hZOmKHHNCm/kXB5GLw8+3XGDOopYRnUmtcBJIaQnmDCrFbZDFbSThrtynVWnrBCzSMoRpyU1A+v9zJm/25dOUFJnKlzk4ZAA="
+            />
           </div>
         </SwiperSlide>
       </Swiper>
