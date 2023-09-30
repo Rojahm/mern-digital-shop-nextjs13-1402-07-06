@@ -1,7 +1,8 @@
 import CategoryBanner from "./components/banner/CategoryBanner";
 import MiddleBanner from "./components/banner/MiddleBanner";
 import MainSlider from "./components/slider/MainSlider";
-import ProductSlider from "./components/slider/ProductSlider";
+import ProductSlider from "./components/slider/productSlider/ProductSlider";
+import GraficProductSlider from "./components/slider/graficSlider/GraficProductSlider";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <MiddleBanner />
       <ProductSlider title={"کتاب ها"} link={"/books"} />
       <CategoryBanner />
+      <GraficProductSlider title={"فایل های گرافیکی"} link={"/files"} />
       <br />
       <br />
       <br />

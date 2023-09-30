@@ -2,8 +2,7 @@ import CategoryBox from "../CategoryBox";
 
 function CategoryBanner() {
   return (
-    <section className="flex flex-wrap justify-between items-center gap-2">
-      <CategoryBox />
+    <section className="container mx-auto flex flex-wrap justify-between items-center gap-2">
       <CategoryBox />
       <CategoryBox />
       <CategoryBox />
