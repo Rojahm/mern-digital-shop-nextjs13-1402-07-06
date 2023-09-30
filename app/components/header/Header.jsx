@@ -19,14 +19,14 @@ function Header() {
     console.log(showSocialMenu);
   };
   return (
-    <header className="mb-2">
-      <div className="flex justify-between items-center mt-2 gap-2">
+    <header className="mb-12 relative">
+      <div className="flex justify-between items-end mt-2 gap-2 relative">
         <Icon
           onShow={showSocial}
           onHide={hideSocial}
           showSocialMenu={showSocialMenu}
         />
-        <div className="flex flex-col items-start w-3/5">
+        <div className="flex flex-col items-start justify-end w-3/5">
           <Nav />
           <Search />
         </div>
@@ -35,11 +35,11 @@ function Header() {
           <UserNav />
         </div>
       </div>
-      {/* <SocialNav
+      <SocialNav
         onShow={showSocial}
         onHide={hideSocial}
         showSocialMenu={showSocialMenu}
-      /> */}
+      />
     </header>
   );
 }

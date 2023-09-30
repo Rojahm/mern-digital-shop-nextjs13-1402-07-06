@@ -1,11 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
 //ui
-import { PiTelegramLogo, PiYoutubeLogo, PiInstagramLogo } from "react-icons/pi";
 
-function Icon({ onShow, onHide, showSocialMenu }) {
+function Icon({ onShow, onHide }) {
   return (
-    <div className="relative flex flex-col h-48">
+    <div className=" flex flex-col">
       <Link
         href={"/"}
         onMouseEnter={onShow}
@@ -19,34 +18,6 @@ function Icon({ onShow, onHide, showSocialMenu }) {
           alt="shop's icon"
         />
       </Link>
-      <div
-        className={
-          showSocialMenu === true
-            ? "absolute z-20 bottom-0 right-0 left-0 flex justify-evenly gap-2 transition-all ease-in-out duration-500"
-            : "absolute z-20 bottom-20 right-0 left-0 flex justify-evenly gap-2 transition-all ease-in-out duration-500"
-        }
-        onMouseEnter={onShow}
-        onMouseLeave={onHide}
-      >
-        <Link href={"/"}>
-          <PiTelegramLogo
-            size={"30px"}
-            className="text-lime-800 shadow hover:shadow-md p-1"
-          />
-        </Link>
-        <Link href={"/"}>
-          <PiYoutubeLogo
-            size={"30px"}
-            className="text-lime-800 shadow hover:shadow-md p-1"
-          />
-        </Link>
-        <Link href={"/"}>
-          <PiInstagramLogo
-            size={"30px"}
-            className="text-lime-800 shadow hover:shadow-md p-1"
-          />
-        </Link>
-      </div>
     </div>
   );
 }
