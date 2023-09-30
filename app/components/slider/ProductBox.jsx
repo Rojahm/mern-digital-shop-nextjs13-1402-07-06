@@ -7,7 +7,7 @@ import { BiBookmark } from "react-icons/bi";
 
 function ProductBox() {
   return (
-    <article className="bg-stone-200 w-64 transition-all ease-in-out duration-300 shadow hover:shadow-md mx-5 mt-5 rounded-lg h-72 min-w-[238px]">
+    <article className="slider-item bg-stone-200 w-64 transition-all ease-in-out duration-300 shadow-[0px_1px_10px_rgba(0,0,0,0.15)] hover:shadow-[0px_1px_10px_rgba(0,0,0,0.25)] rounded-lg h-72 min-w-[238px]">
       <Link href={"/"}>
         <Image
           src={"/images/product/ganj.jpg"}
@@ -18,7 +18,7 @@ function ProductBox() {
           className="rounded-t-md mb-4 my-0 mx-auto"
         />
         <h3 className="font-bold text-stone-800 text-sm pr-3">
-          کتاب گنج - نوشته جلال آل احمد
+          کتاب گنج - نوشته جلال آل احمد کتاب گنج - نوشته جلال آل احمد
         </h3>
       </Link>
       {/* keywords */}
