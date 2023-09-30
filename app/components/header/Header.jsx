@@ -21,11 +21,7 @@ function Header() {
   return (
     <header className="mb-12 relative">
       <div className="flex justify-between items-end mt-2 gap-2 relative">
-        <Icon
-          onShow={showSocial}
-          onHide={hideSocial}
-          showSocialMenu={showSocialMenu}
-        />
+        <Icon onShow={showSocial} onHide={hideSocial} />
         <div className="flex flex-col items-start justify-end w-3/5">
           <Nav />
           <Search />
