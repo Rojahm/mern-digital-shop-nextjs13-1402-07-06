@@ -7,7 +7,7 @@ import { BiBookmark } from "react-icons/bi";
 
 function ProductBox() {
   return (
-    <article className="relative slider-item bg-stone-200 w-64 transition-all ease-in-out duration-300 shadow-[0px_1px_10px_rgba(0,0,0,0.15)] hover:shadow-[0px_1px_10px_rgba(0,0,0,0.25)] rounded-lg h-80 min-w-[238px]">
+    <article className="relative slider-item bg-stone-200 w-64 transition-all ease-in-out duration-300 shadow-[0px_1px_10px_rgba(0,0,0,0.15)] hover:shadow-[0px_1px_10px_rgba(0,0,0,0.25)] rounded-lg h-80 min-w-[238px] hover:-translate-y-3">
       <Link href={"/"}>
         <Image
           src={"/images/product/ganj.jpg"}
