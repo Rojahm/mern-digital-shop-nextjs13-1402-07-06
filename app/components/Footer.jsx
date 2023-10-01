@@ -4,7 +4,7 @@ import Link from "next/link";
 function Footer() {
   return (
     <footer className="my-14 text-stone-500">
-      <div className="flex justify-between items-center gap-5 w-[95%] my-0 mx-auto bg-stone-100 p-5 rounded-md">
+      <div className="flex justify-between items-start gap-5 w-[95%] my-0 mx-auto bg-stone-100 p-5 rounded-md">
         <div className="basis-2/5">
           <Link
             href={"/"}
@@ -17,7 +17,7 @@ function Footer() {
             </p>
           </Link>
         </div>
-        <div className="basis-1/5">
+        <div className="basis-1/5 mt-5">
           <h3 className="text-lg mb-4">دسترسی سریع</h3>
           <ul className="list-disc pr-4">
             <li className="sm:text-md md:text-sm lg:text-md">درباره ما</li>
@@ -26,7 +26,7 @@ function Footer() {
             <li className="sm:text-md md:text-sm lg:text-md">تماس با ما</li>
           </ul>
         </div>
-        <div className="basis-1/5">
+        <div className="basis-1/5 mt-5">
           <h3 className="text-lg mb-4">راهنمای خرید</h3>
           <ul className="list-disc pr-4">
             <li className="sm:text-md md:text-sm lg:text-md">سوالات متداول</li>

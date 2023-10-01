@@ -1,3 +1,4 @@
+import Credit from "./components/Credit";
 import Footer from "./components/Footer";
 import Header from "./components/header/Header";
 import "./globals.css";
@@ -19,9 +20,7 @@ export default function RootLayout({ children }) {
         </div>
         {children}
         <Footer />
-        <br />
-        <br />
-        <br />
+        <Credit />
       </body>
     </html>
   );
