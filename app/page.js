@@ -15,10 +15,6 @@ export default function Home() {
       <CategoryBanner />
       <GraficProductSlider title={"فایل های گرافیکی"} link={"/files"} />
       <BlogBanner />
-      <br />
-      <br />
-      <br />
-      <br />
     </main>
   );
 }
