@@ -8,10 +8,6 @@ function CategoryBanner() {
       <CategoryBox />
       <CategoryBox />
       <CategoryBox />
-      <CategoryBox />
-      <CategoryBox />
-      <CategoryBox />
-      <CategoryBox />
     </section>
   );
 }
