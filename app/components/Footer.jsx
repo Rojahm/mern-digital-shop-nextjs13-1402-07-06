@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function Footer() {
   return (
-    <footer className="my-14 text-stone-500">
+    <footer className="mt-14 mb-5 text-stone-500">
       <div className="flex justify-between items-start gap-5 w-[95%] my-0 mx-auto bg-stone-100 p-5 rounded-md">
         <div className="basis-2/5">
           <Link
