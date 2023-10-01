@@ -2,9 +2,6 @@ import Credit from "./components/Credit";
 import Footer from "./components/Footer";
 import Header from "./components/header/Header";
 import "./globals.css";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -13,8 +10,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" dir="rtl">
-      <body className={inter.className}>
+    <html lang="en">
+      <body>
         <div className="container">
           <Header />
         </div>
