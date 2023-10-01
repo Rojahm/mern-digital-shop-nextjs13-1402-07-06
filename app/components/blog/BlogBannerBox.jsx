@@ -18,9 +18,10 @@ function BlogBannerBox() {
         </h3>
       </Link>
       <p className="text-stone-500 mt-3 sm:text-md md:text-sm lg:text-md">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s since the 1500s since the
+        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+        از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
+        سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی پیوسته اهل دنیای موجود
+        طر
       </p>
       {/* keywords */}
       <div className="">
