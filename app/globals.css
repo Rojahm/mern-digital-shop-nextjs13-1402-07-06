@@ -43,7 +43,7 @@ body {
 }
 
 .menu-btn {
-  @apply bg-lime-700 p-2 text-stone-100 rounded shadow-md hover:shadow-lg w-20 text-center border-2 border-lime-700 transition-all duration-200;
+  @apply bg-lime-700 p-2 text-stone-100 rounded shadow-md hover:shadow-lg lg:w-28 text-center border-2 border-lime-700 transition-all duration-200;
 }
 .menu-btn {
   font-size: 13px;
