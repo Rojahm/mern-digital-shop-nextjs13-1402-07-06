@@ -9,8 +9,7 @@ function BlogBannerBox() {
           src={"/images/product/ganj.jpg"}
           width={260}
           height={180}
-          objectFit="cover"
-          layout="fixed"
+          alt="cover of the book ganj"
           className="rounded-lg my-0 mx-auto"
         />
         <h3 className="font-bold text-stone-600 text-md mt-4">

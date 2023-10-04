@@ -10,10 +10,8 @@ function MiddleBanner() {
             src={"/images/banner/1.jpg"}
             width={600}
             height={100}
-            objectFit="cover"
-            layout="fixed"
             className="rounded-md shadow-md object-cover md:object-scale-down"
-            alt="banner 1"
+            alt="be the best of you"
           />
         </Link>
       </article>
@@ -23,10 +21,8 @@ function MiddleBanner() {
             src={"/images/banner/2.jpg"}
             width={600}
             height={100}
-            objectFit="cover"
-            layout="fixed"
             className="rounded-md shadow-md"
-            alt="banner 2"
+            alt="iran history"
           />
         </Link>
       </article>

@@ -12,11 +12,9 @@ function Header() {
   const [showSocialMenu, setShowSocialMenu] = useState(false);
   const showSocial = () => {
     setShowSocialMenu(true);
-    console.log(showSocialMenu);
   };
   const hideSocial = () => {
     setShowSocialMenu(false);
-    console.log(showSocialMenu);
   };
   return (
     <header className="mb-12 relative">

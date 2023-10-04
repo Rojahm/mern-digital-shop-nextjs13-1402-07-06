@@ -16,7 +16,7 @@ function Footer() {
               src={"/trans-icon.png"}
               width={100}
               height={100}
-              alt="logo image"
+              alt="logo image in footer"
             />
             <p className="mt-2 text-center sm:text-md md:text-sm lg:text-md lg:px-14 line-clamp-1 sm:line-clamp-1 md:line-clamp-2">
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
@@ -90,7 +90,7 @@ function Footer() {
                 src={"/images/Licenses/1.png"}
                 width={100}
                 height={100}
-                alt="licence"
+                alt="enamad"
               />
             </Link>
           </div>
@@ -100,7 +100,7 @@ function Footer() {
                 src={"/images/Licenses/2.png"}
                 width={100}
                 height={100}
-                alt="license2"
+                alt="enamad"
               />
             </Link>
           </div>

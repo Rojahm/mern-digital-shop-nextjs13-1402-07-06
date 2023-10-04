@@ -16,6 +16,7 @@ function CategoryBox() {
             src={"/images/categories/calculator-min.png"}
             width={60}
             height={60}
+            alt="calculator"
           />
         </div>
       </article>

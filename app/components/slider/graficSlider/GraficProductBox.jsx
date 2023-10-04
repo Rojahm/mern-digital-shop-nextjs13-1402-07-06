@@ -16,9 +16,8 @@ function GraficProductBox() {
           src={"/images/product/ganj.jpg"}
           width={280}
           height={180}
-          objectFit="cover"
-          layout="fixed"
           className="rounded-t-md mb-4 my-0 mx-auto"
+          alt="book cover"
         />
         <h3 className="font-bold text-stone-600 text-sm pr-3">
           کتاب گنج - نوشته جلال آل احمد کتاب گنج - نوشته جلال آل احمد
