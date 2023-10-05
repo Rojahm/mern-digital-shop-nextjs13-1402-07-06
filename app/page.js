@@ -3,7 +3,7 @@ import MiddleBanner from "./components/banner/MiddleBanner";
 import MainSlider from "./components/slider/MainSlider";
 import ProductSlider from "./components/slider/productSlider/ProductSlider";
 import GraficProductSlider from "./components/slider/graficSlider/GraficProductSlider";
-import BlogBanner from "./components/blog/BlogBanner";
+import BlogBanner from "./blog/BlogBanner";
 
 export default function Home() {
   return (
