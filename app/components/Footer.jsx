@@ -15,7 +15,7 @@ function Footer() {
             <Image
               src={"/trans-icon.png"}
               width={100}
-              height={100}
+              height={120}
               alt="logo image in footer"
             />
             <p className="mt-2 text-center sm:text-md md:text-sm lg:text-md lg:px-14 line-clamp-1 sm:line-clamp-1 md:line-clamp-2">
@@ -88,8 +88,8 @@ function Footer() {
             <Link href={"/"}>
               <Image
                 src={"/images/Licenses/1.png"}
-                width={100}
-                height={100}
+                width={"100"}
+                height={"120"}
                 alt="enamad"
               />
             </Link>
@@ -98,8 +98,8 @@ function Footer() {
             <Link href={"/"}>
               <Image
                 src={"/images/Licenses/2.png"}
-                width={100}
-                height={100}
+                width={"100"}
+                height={"120"}
                 alt="enamad"
               />
             </Link>

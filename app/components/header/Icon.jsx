@@ -9,7 +9,7 @@ function Icon({ onShow, onHide }) {
         href={"/"}
         onMouseEnter={onShow}
         onMouseLeave={onHide}
-        className="bg-stone-200 z-40 shadow-md logo rounded-lg p-5 hover:shadow-lg my-0 mx-auto"
+        className="bg-stone-200 z-40 shadow-md logo rounded-lg p-5 hover:shadow-lg my-0 mx-auto w-auto"
       >
         <Image
           src={"/trans-icon.png"}

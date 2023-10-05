@@ -4,7 +4,7 @@ import Link from "next/link";
 function BlogBannerBox() {
   return (
     <article className="p-4 slider-item bg-stone-100 w-72 transition-all ease-in-out duration-300 shadow-[0px_1px_10px_rgba(0,0,0,0.15)] hover:shadow-[0px_1px_10px_rgba(0,0,0,0.25)] rounded-lg sm:h-[28rem] md:h-[26rem] lg:h-[25rem] min-w-[238px] hover:-translate-y-4">
-      <Link href={"/"}>
+      <Link href={"/blog/singlePost"}>
         <Image
           src={"/images/product/ganj.jpg"}
           width={260}
