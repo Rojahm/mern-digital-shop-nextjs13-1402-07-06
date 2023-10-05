@@ -53,9 +53,7 @@ body {
   cursor: pointer;
   @apply bg-stone-200 text-lime-700;
 }
-.search-form {
-  @apply bg-stone-200 rounded flex shadow h-12;
-}
+
 /* Main Slider */
 .swiper {
   width: 100%;

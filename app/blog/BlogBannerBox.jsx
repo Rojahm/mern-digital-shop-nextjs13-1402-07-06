@@ -16,7 +16,7 @@ function BlogBannerBox() {
           کتاب گنج - نوشته جلال آل احمد کتاب گنج - نوشته جلال آل احمد
         </h3>
       </Link>
-      <p className="text-stone-500 mt-3 sm:text-md md:text-sm lg:text-md line-clamp-6 md:line-clamp-6 lg:line-clamp-5">
+      <p className="text-stone-500 mt-3 sm:text-md md:text-sm lg:text-md line-clamp-6 md:line-clamp-6 lg:line-clamp-5 text-justify">
         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
         از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
         سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی پیوسته اهل دنیای موجود

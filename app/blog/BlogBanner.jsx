@@ -12,7 +12,7 @@ function BlogBanner() {
           </button>
         </Link>
       </div>
-      <div className="flex flex-wrap justify-between gap-5">
+      <div className="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 my-0 mx-auto w-fit">
         <BlogBannerBox />
         <BlogBannerBox />
         <BlogBannerBox />
