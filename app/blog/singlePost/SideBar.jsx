@@ -1,23 +1,85 @@
-//ui & icon
-import { PiMagnifyingGlass } from "react-icons/pi";
+import NewsLetter from "@/app/components/sidebar/NewsLetter";
+import Link from "next/link";
+import BlogSearch from "../BlogSearch";
 
 const SideBar = () => {
   return (
     <div>
-      <form className="relative mt-2 rounded-md shadow-sm">
-        <input
-          type="text"
-          name="blogQuery"
-          id="blogQuery"
-          className="block w-full rounded-md border-0 py-1.5 pr-3 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-lime-600/50 focuse:outline focus:outline-4 focus:outline-lime-500 sm:text-sm sm:leading-6"
-          placeholder="جستجو در وبلاگ ..."
-        />
-        <div className="absolute inset-y-0 left-0 flex items-center pl-3">
-          <button className="text-gray-500 sm:text-sm">
-            <PiMagnifyingGlass size={"20px"} />
-          </button>
+      {/* Blog Search */}
+      <BlogSearch />
+      {/* Summary */}
+      <div className="flex flex-col my-5 justify-evenly bg-stone-100/50 p-4 lg:p-5 rounded-xl shadow-lg">
+        <h3 className="text-stone-600 mb-3">توضیحات خلاصه</h3>
+        <p className="line-clamp-3 text-stone-500 sm:text-md md:text-sm lg:text-md text-justify">
+          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+          از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
+          سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
+          متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه
+          درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با
+          نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان
+          خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید
+          داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به
+          پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی
+          سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+        </p>
+      </div>
+      {/* Most viewed posts */}
+      <div className="flex flex-col my-5 justify-evenly bg-stone-100/50 p-4 lg:p-5 rounded-xl shadow-lg">
+        <h3 className="text-lime-600 mb-3">پربازدیدترین مقالات</h3>
+        <div className="flex flex-col mt-3 gap-5">
+          <Link href={"/"}>
+            <p className="line-clamp-2 text-stone-500 sm:text-md md:text-sm lg:text-md text-justify border-r-2 border-lime-600 pr-[12px] hover:border-r-4 hover:pr-[10px]">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+              نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+              کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان
+              جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای
+              طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان
+              فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری
+              موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد
+              نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل
+              دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+            </p>
+          </Link>
         </div>
-      </form>
+        <div className="flex flex-col mt-3 gap-5">
+          <Link href={"/"}>
+            <p className="line-clamp-2 text-stone-500 sm:text-md md:text-sm lg:text-md text-justify border-r-2 border-lime-600 pr-[12px] hover:border-r-4 hover:pr-[10px]">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+              نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+              کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان
+              جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای
+              طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان
+              فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری
+              موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد
+              نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل
+              دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+            </p>
+          </Link>
+        </div>
+        <div className="flex flex-col mt-3 gap-5">
+          <Link href={"/"}>
+            <p className="line-clamp-2 text-stone-500 sm:text-md md:text-sm lg:text-md text-justify border-r-2 border-lime-600 pr-[12px] hover:border-r-4 hover:pr-[10px]">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+              نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+              کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان
+              جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای
+              طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان
+              فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری
+              موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد
+              نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل
+              دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+            </p>
+          </Link>
+        </div>
+      </div>
+      {/* newsletter subscription */}
+      <NewsLetter />
     </div>
   );
 };
