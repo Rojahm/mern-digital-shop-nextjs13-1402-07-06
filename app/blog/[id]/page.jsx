@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 //custom components
+import BreadCrumb from "@/app/components/breadCrumb";
 import BlogBannerBox from "../BlogBannerBox";
 
 //ui icons
@@ -9,6 +10,12 @@ import { FaEye, FaComment, FaCalendarAlt } from "react-icons/fa";
 const SingleBlogPost = () => {
   return (
     <div className="container">
+      <BreadCrumb
+        page={"وبلاگ"}
+        pageLink={"/blog"}
+        pageTitle={" چرا next.js بهتر از همه فریمورک های جاوا اسکریپ دیگر است؟"}
+      />
+
       <article className="flex flex-col gap-5 justify-center items-stretch">
         <Image
           src={"/images/product/ganj.jpg"}

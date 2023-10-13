@@ -1,4 +1,4 @@
-import CategoryBox from "../CategoryBox";
+import CategoryBox from "./CategoryBox";
 
 function CategoryBanner() {
   return (

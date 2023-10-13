@@ -1,6 +1,7 @@
 import Credit from "./components/Credit";
 import Footer from "./components/Footer";
-import Header from "./components/header/Header";
+import Header from "./components/Header";
+
 import "./globals.css";
 
 export const metadata = {

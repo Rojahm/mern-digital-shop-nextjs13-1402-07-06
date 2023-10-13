@@ -2,7 +2,7 @@ import Link from "next/link";
 //ui icons
 import { MdKeyboardArrowLeft } from "react-icons/md";
 
-const BreadCrumb = () => {
+const BreadCrumb = ({ page, pageLink, pageTitle }) => {
   return (
     <div className="flex text-xs justify-start items-center mb-5">
       <Link href={"/"} className="text-lime-600 font-bold">
@@ -10,14 +10,14 @@ const BreadCrumb = () => {
       </Link>
 
       <MdKeyboardArrowLeft className="text-lime-600" />
-      <Link href={"/"} className="text-lime-600 font-bold">
-        بلاگ
+
+      <Link href={pageLink} className="text-lime-600 font-bold">
+        {page}
       </Link>
+
       <MdKeyboardArrowLeft className="text-lime-600" />
 
-      <Link href={"/"} className="text-stone-400">
-        چرا next.js بهتر از همه فریمورک های جاوا اسکریپ دیگر است؟
-      </Link>
+      <div className="text-stone-400">{pageTitle}</div>
     </div>
   );
 };
