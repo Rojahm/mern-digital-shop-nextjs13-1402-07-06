@@ -2,14 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 //custom components
 import BreadCrumb from "@/app/components/breadCrumb";
-import BlogBannerBox from "../BlogBannerBox";
 
 //ui icons
 import { FaEye, FaComment, FaCalendarAlt } from "react-icons/fa";
+import RelatedPost from "@/app/components/RelatedPost";
 
 const SingleBlogPost = () => {
   return (
-    <div className="container">
+    <div className="container flex flex-col gap-5">
       <BreadCrumb
         page={"وبلاگ"}
         pageLink={"/blog"}
@@ -60,21 +60,15 @@ const SingleBlogPost = () => {
           پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی
           سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
         </p>
-        {/* related menu */}
-        <div>
-          <h3 className="text-stone-500 font-bold mt-10 mb-5">مطالب مرتبط</h3>
-          <div className="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-0 mx-auto w-fit">
-            <BlogBannerBox />
-            <BlogBannerBox />
-            <BlogBannerBox />
-          </div>
-        </div>
-        {/* comment section */}
-        <div>
-          <h3>دیدگاه ها</h3>
-          <div className="bg-red-300 h-60"></div>
-        </div>
       </article>
+
+      <RelatedPost />
+
+      {/* comment section */}
+      <div className="flex flex-col gap-2">
+        <h3>دیدگاه ها</h3>
+        <div className="bg-red-300/50 h-60 rounded-lg"></div>
+      </div>
     </div>
   );
 };
