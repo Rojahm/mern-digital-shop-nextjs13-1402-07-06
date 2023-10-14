@@ -1,8 +1,8 @@
 import CategoryBanner from "./components/CategoryBanner";
 import MiddleBanner from "./components/MiddleBanner";
-import MainSlider from "./components/MainSlider";
-import ProductSlider from "./components/ProductSlider";
-import GraficProductSlider from "./components/GraficProductSlider";
+import MainSlider from "./components/sliders/MainSlider";
+import ProductSlider from "./components/sliders/ProductSlider";
+import GraficProductSlider from "./components/sliders/GraficProductSlider";
 import BlogBanner from "./blog/BlogBanner";
 
 export default function Home() {
