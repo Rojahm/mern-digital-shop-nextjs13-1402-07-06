@@ -55,42 +55,53 @@ const SingleProductPage = () => {
             </div>
           </div>
         </div>
-        <h2 className="text-lime-600 font-semibold">
-          چرا next.js بهتر از همه فریمورک های جاوا اسکریپ دیگر است؟
-        </h2>
-        <div className="flex gap-2 mb-10">
-          <Link href={"/"}>
-            <div className="flex justify-evenly gap-1 text-xs items-center bg-stone-300 p-2 rounded-md shadow text-stone-700">
-              <FaEye size={16} />
-              تعداد بازدید: 5
-            </div>
-          </Link>
-          <Link href={"/"}>
-            <div className="flex justify-evenly gap-1 text-xs items-center bg-stone-300 p-2 rounded-md shadow text-stone-700">
-              <FaComment size={14} />
-              تعداد دیدگاه: 5
-            </div>
-          </Link>
-          <Link href={"/"}>
-            <div className="flex justify-evenly gap-1 text-xs items-center bg-stone-300 p-2 rounded-md shadow text-stone-700">
-              <FaCalendarAlt size={14} />
-              تاریخ انتشار: 1402/07/10
-            </div>
-          </Link>
+        {/* product Icons */}
+        <div className="flex justify-evenly gap-2 my-10">
+          <div className="bg-lime-500/50 p-3 rounded-md shadow-md flex gap-5 justify-start items-center w-52">
+            <Image
+              src={"/images/icons/trophy.png"}
+              alt="feedback"
+              width={65}
+              height={80}
+            />
+            <div>1</div>
+          </div>
+          <div className="bg-lime-500/50 p-3 rounded-md shadow-md flex gap-5 justify-start items-center w-52">
+            <Image
+              src={"/images/icons/feedback.png"}
+              alt="feedback"
+              width={65}
+              height={80}
+            />
+            <div>1</div>
+          </div>
+          <div className="bg-lime-500/50 p-3 rounded-md shadow-md flex gap-5 justify-start items-center w-52">
+            <Image
+              src={"/images/icons/target1.png"}
+              alt="feedback"
+              width={65}
+              height={80}
+            />
+            <div>1</div>
+          </div>
         </div>
-        <h3 className="text-stone-500 font-bold">توضیحات کامل</h3>
-        <p className="text-stone-500 text-justify leading-relaxed">
-          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
-          از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
-          سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
-          متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه
-          درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با
-          نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان
-          خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید
-          داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به
-          پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی
-          سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
-        </p>
+        {/* product description */}
+        <div className="shadow-lg bg-stone-50/50 px-10 py-6 rounded-lg">
+          <h3 className="text-stone-500 font-bold">توضیحات کامل</h3>
+          <p className="text-stone-500 text-justify leading-relaxed">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
+            ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+            کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی
+            در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را
+            می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
+            الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این
+            صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و
+            شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای
+            اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد
+            استفاده قرار گیرد.
+          </p>
+        </div>
       </article>
 
       <RelatedPost title={"محصولات"} />
