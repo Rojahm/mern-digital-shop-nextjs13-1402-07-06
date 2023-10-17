@@ -1,6 +1,6 @@
-import NewsLetter from "@/app/components/SideBar/NewsLetter";
+import BlogSearch from "@/app/blog/BlogSearch";
+import NewsLetter from "@/components/SideBar/NewsLetter";
 import Link from "next/link";
-import BlogSearch from "../../blog/BlogSearch";
 
 const SideBar = () => {
   return (

@@ -6,7 +6,7 @@ import BlogBannerBox from "@/app/blog/BlogBannerBox";
 //UI - icons
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 
-const RelatedPost = () => {
+const RelatedPost = ({ title }) => {
   const carouselRef = useRef();
   const carouselSwitcher = (data) => {
     if (carouselRef.current) {
@@ -20,7 +20,9 @@ const RelatedPost = () => {
   return (
     <section className="flex flex-col my-10 bg-stone-200 py-5 px-8 rounded-lg">
       <header className="flex">
-        <h2 className="text-stone-600 font-semibold text-lg">| مطالب مرتبط</h2>
+        <h2 className="text-stone-600 font-semibold text-lg">
+          | {title} مرتبط
+        </h2>
         {/* navigation */}
         <div className="mr-auto flex flex-row-reverse gap-2">
           <button
