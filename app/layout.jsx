@@ -1,6 +1,6 @@
-import Credit from "./components/Credit";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import Header from "@/components/Header";
+import Credit from "@/components/Credit";
+import Footer from "@/components/Footer";
 
 import "./globals.css";
 
