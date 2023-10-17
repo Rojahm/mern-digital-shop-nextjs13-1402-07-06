@@ -57,7 +57,7 @@ const SingleProductPage = () => {
         </div>
         {/* product Icons */}
         <div className="flex justify-evenly gap-2 my-10">
-          <div className="bg-lime-500/50 p-3 rounded-md shadow-md flex gap-5 justify-start items-center w-52">
+          <div className="bg-lime-500/40 p-3 rounded-md shadow-md flex gap-5 justify-start items-center w-52">
             <Image
               src={"/images/icons/trophy.png"}
               alt="feedback"
@@ -66,7 +66,7 @@ const SingleProductPage = () => {
             />
             <div>1</div>
           </div>
-          <div className="bg-lime-500/50 p-3 rounded-md shadow-md flex gap-5 justify-start items-center w-52">
+          <div className="bg-lime-500/40 p-3 rounded-md shadow-md flex gap-5 justify-start items-center w-52">
             <Image
               src={"/images/icons/feedback.png"}
               alt="feedback"
@@ -75,7 +75,7 @@ const SingleProductPage = () => {
             />
             <div>1</div>
           </div>
-          <div className="bg-lime-500/50 p-3 rounded-md shadow-md flex gap-5 justify-start items-center w-52">
+          <div className="bg-lime-500/40 p-3 rounded-md shadow-md flex gap-5 justify-start items-center w-52">
             <Image
               src={"/images/icons/target1.png"}
               alt="feedback"
