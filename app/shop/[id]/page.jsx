@@ -56,7 +56,7 @@ const SingleProductPage = () => {
           </div>
         </div>
         {/* product Icons */}
-        <div className="flex justify-evenly gap-2 my-10">
+        <div className="flex justify-around gap-2 my-10">
           <div className="bg-lime-500/40 p-3 rounded-md shadow-md flex gap-5 justify-start items-center w-52">
             <Image
               src={"/images/icons/trophy.png"}
