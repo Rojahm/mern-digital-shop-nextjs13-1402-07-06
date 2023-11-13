@@ -16,9 +16,9 @@ function DashboardMain() {
   }, [content]);
 
   return (
-    <div className="container flex justify-between">
+    <div className="container flex justify-between gap-4">
       <DashboardCtrl setContent={setContent} />
-      <div>{details}</div>
+      <div className="w-full">{details}</div>
     </div>
   );
 }
