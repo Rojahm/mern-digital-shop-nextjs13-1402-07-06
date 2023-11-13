@@ -1,10 +1,9 @@
-import DashboardCtrl from "@/components/dashboard/dashboard-ctrl";
+import DashboardMain from "@/components/dashboard/dashboardMain";
 
 function DashboardPage() {
   return (
     <div>
-      <h1>dashboard page</h1>
-      <DashboardCtrl />
+      <DashboardMain />
     </div>
   );
 }
